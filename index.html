@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS DARKMODE -->
+  <link rel="stylesheet" href="darkmode.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Title  -->
+  <title>API Git Hub</title>
+</head>
+<body>
+  <nav>
+    <h1>
+      devFinder
+    </h1>
+    <div>
+      <p id="title_dark_light">Dark</p>
+      <input type="checkbox" onclick="dark_light()" id="dark_light">
+    </div>
+  </nav>
+
+  <header>
+    <div class="div-search div-search-dark">
+    <div id="div-search">
+      <img src="assets/img/search.svg" alt="">
+      <input type="text" placeholder="Search GitHub username..." maxlength="50" id="pesquisa">
+    </div>
+        <button onclick="start()">Search</button>
+    </div>
+  </header>
+
+  <section>
+    
+    <div id="logo-perfil">
+      <img id="logo-perfil-img" src="assets/img/Octocat.png" alt="">
+    </div>
+    
+    <div id="cont-geral-title">
+
+      <div id="cont-title-card">
+        <div>
+          <h2 id="cont-title-name">The Octocat</h2>
+          <p id="title_card_name">@octocat</p>
+          <p id="title_card_bio">This profile has no bio</p>
+        </div>
+        <p id="title_card_joined">Joined 25 Jan 2011</p>
+      </div>
+
+      <div id="cont-infos">
+        <div id="cont-infos-title">
+          <div class="info-title">
+            <p class="infos">Repos</p>
+            <p class="number" id="infos-repos">8</p>
+          </div>
+          
+          <div class="info-title">
+            <p class="infos">Followers</p>
+            <p class="number" id="infos-follow">3938</p>
+          </div>
+          
+          <div class="info-title">
+            <p class="infos">Following</p>
+            <p class="number" id="infos-following">9</p>
+          </div>
+        </div>
+
+
+          
+      </div>
+
+      <div id="footer">
+
+        <span>
+          <div class="footer-infos">
+            <img src="assets/img/geo-alt-fill.svg" alt="">
+            <p class="footer-descricao" id="cidade">San Francisco</p>
+          </div>
+
+          <div class="footer-infos" id="footer-link">
+            <img src="assets/img/link-45deg.svg" alt="">
+            <a class="footer-descricao" href="" id="link" >https://github.blog</a>
+          </div>
+        </span>
+
+        <span>
+          <div class="footer-infos">
+            <img src="assets/img/twitter.svg" alt="">
+            <p class="footer-descricao" id="twitter">Not Available</p>
+          </div>
+  
+          <div class="footer-infos">
+            <img src="assets/img/building.svg" alt="">
+            <p class="footer-descricao" id="empresa">@github</p>
+          </div>
+        </span>
+      
+      </div>
+    </div>
+
+  </section>
+
+
+<!-- <input type="text" id="pesquisa">
+<button onclick="start()">Pesquisar</button>
+
+<h1 id="users"></h1>
+<h4 id="follow"></h4>
+<h4 id="follow2"></h4>
+<p id="bio"></p> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
