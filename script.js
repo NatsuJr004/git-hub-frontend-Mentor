@@ -113,13 +113,22 @@ let title_darkMode = document.querySelector('#title_dark_light');
 let divSearch = document.querySelector('.div-search');
 let section = document.querySelector('section');
 
+let img = document.querySelector('#cont-img-darkmode');
+
 function dark_light(){
-  let sla = atv == false ? atv = true : atv = false
-  if(atv == true){
-    title_darkMode.innerText = 'Not Available';
-  }
+  atv == false ? atv = true : atv = false;
 
   if(atv == false){
     title_darkMode.innerText = 'Dark';
+    img.innerHTML = `
+    <img src="./assets/img/lua.svg" onclick="dark_light()">
+    `;
+  }
+
+  if(atv == true){
+    title_darkMode.innerText = 'Light';
+    img.innerHTML = `
+    <img src="./assets/img/sol.svg" onclick="dark_light()">
+    `;
   }
 }
